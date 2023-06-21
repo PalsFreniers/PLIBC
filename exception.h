@@ -26,10 +26,6 @@
  *
  * do not use throw or a function that could throw an exception outside
  * of a try catch structure or it could lead to undifined behaviour
- *
- * there is a many stdlib functions that have been made
- * you can enable them using the macro :
- * #define PLIBC_EXCEPTION_STDLIB
  */
 
 // stdlib includes
