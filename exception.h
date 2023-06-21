@@ -22,8 +22,10 @@
  *      - exception;
  * 100 - 199 : user Exceptions
  * 200 - 299 : ptr  Exceptions:
- *      - nullptrException;
- *
+ *         - nullptrException;
+ * 300 - 399 : logger Exception:
+ *         - errorLogException;
+ * 
  * do not use throw or a function that could throw an exception outside
  * of a try catch structure or it could lead to undifined behaviour
  */
