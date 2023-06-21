@@ -32,4 +32,16 @@
  * #define PLIBC_EXCEPTION_STDLIB
  */
 
+// stdlib includes
+#include <setjmp.h>
+
+// plbic includes
+#include "exception/base.h"
+#include "exception/macros.h"
+
+// plibc exception stdlib
+#ifdef PLIBC_EXCEPTION_STDLIB
+#include "exception/stdlib.h"
+#endif
+
 #endif
