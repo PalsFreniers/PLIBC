@@ -76,7 +76,20 @@ void Logger_debugExcept(const char* fmt, ...) {
 
 struct logger Logger_createDefault() {
         struct logger ret = {0};
-        
+        ret.info = Logger_info;
+        ret.warn = Logger_warn;
+        ret.error = Logger_error;
+        ret.debug = Logger_debug;
+        ret.isExcept = false;
         return ret;
 }
-struct logger Logger_createExcept();
+
+struct logger Logger_createExcept() {
+        struct logger ret = {0};
+        ret.info = Logger_infoExcept;
+        ret.warn = Logger_warnExcept;
+        ret.error = Logger_errorExcept;
+        ret.debug = Logger_debugExcept;
+        ret.isExcept = true;
+        return ret;
+}

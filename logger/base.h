@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+#include "../types.h"
 #include "../exception.h"
 #include "macros.h"
 
@@ -16,7 +17,7 @@ struct logger {
         void (*warn)(const char *, ...);
         void (*error)(const char *, ...);
         void (*debug)(const char *, ...);
-        int isExcept;
+        bool isExcept;
 };
 
 struct logger Logger_createDefault();
