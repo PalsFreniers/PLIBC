@@ -18,13 +18,14 @@
  *   #define exceptionName (value)
  *
  * here is the list of ranges of exceptions that are available:
- * 1 - 99 : generics Exceptions:
- *      - exception;
- * 100 - 199 : user Exceptions
+ * 1   - 199 : user Exceptions
  * 200 - 299 : ptr  Exceptions:
  *         - nullptrException;
  * 300 - 399 : logger Exception:
- *         - errorLogException;
+ *         - logInfoException
+ *         - logWarnException
+ *         - logErrorException
+ *         - logDebugException
  * 
  * do not use throw or a function that could throw an exception outside
  * of a try catch structure or it could lead to undifined behaviour
