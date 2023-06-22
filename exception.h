@@ -28,9 +28,6 @@
  * of a try catch structure or it could lead to undifined behaviour
  */
 
-// stdlib includes
-#include <setjmp.h>
-
 // plbic includes
 #include "exception/base.h"
 #include "exception/macros.h"
