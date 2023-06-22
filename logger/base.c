@@ -9,6 +9,7 @@ void Logger_info(const char* fmt, ...) {
         va_start(list, fmt);
         fprintf(stdout, "[INFO]    %02d/%02d/%04d %02d:%02d:%02d -> ", tm.tm_mday, tm.tm_mon, tm.tm_year, tm.tm_hour, tm.tm_min, tm.tm_sec);
         fprintf(stdout, fmt, list);
+        fprintf(stdout, "\n");
         va_end(list);
 }
 
@@ -17,8 +18,9 @@ void Logger_warn(const char* fmt, ...) {
         struct tm tm = *localtime(&t);
         va_list list;
         va_start(list, fmt);
-        fprintf(stdout, "[WARNING] %02d/%02d/%04d %02d:%02d:%02d -> ", tm.tm_mday, tm.tm_mon, tm.tm_year, tm.tm_hour, tm.tm_min, tm.tm_sec);
-        fprintf(stdout, fmt, list);
+        fprintf(stderr, "[WARNING] %02d/%02d/%04d %02d:%02d:%02d -> ", tm.tm_mday, tm.tm_mon, tm.tm_year, tm.tm_hour, tm.tm_min, tm.tm_sec);
+        fprintf(stderr, fmt, list);
+        fprintf(stderr, "\n");
         va_end(list);
 }
 
@@ -27,8 +29,9 @@ void Logger_error(const char* fmt, ...) {
         struct tm tm = *localtime(&t);
         va_list list;
         va_start(list, fmt);
-        fprintf(stdout, "[ERROR]   %02d/%02d/%04d %02d:%02d:%02d -> ", tm.tm_mday, tm.tm_mon, tm.tm_year, tm.tm_hour, tm.tm_min, tm.tm_sec);
-        fprintf(stdout, fmt, list);
+        fprintf(stderr, "[ERROR]   %02d/%02d/%04d %02d:%02d:%02d -> ", tm.tm_mday, tm.tm_mon, tm.tm_year, tm.tm_hour, tm.tm_min, tm.tm_sec);
+        fprintf(stderr, fmt, list);
+        fprintf(stderr, "\n");
         va_end(list);
 }
 
@@ -39,6 +42,7 @@ void Logger_debug(const char* fmt, ...)  {
         va_start(list, fmt);
         fprintf(stdout, "[DEBUG]   %02d/%02d/%04d %02d:%02d:%02d -> ", tm.tm_mday, tm.tm_mon, tm.tm_year, tm.tm_hour, tm.tm_min, tm.tm_sec);
         fprintf(stdout, fmt, list);
+        fprintf(stdout, "\n");
         va_end(list);
 }
 
