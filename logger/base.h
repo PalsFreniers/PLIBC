@@ -27,15 +27,15 @@ struct logger Logger_createExcept();
 #ifdef  PLIBC_LOGGER_FUNC
 #define PLIBC_LOGGER_FUNC
 
-void Logger_info(const char* fmt, ...);
-void Logger_warn(const char* fmt, ...);
-void Logger_error(const char* fmt, ...);
-void Logger_debug(const char* fmt, ...);
+void Logger_info(const char *fmt, ...);
+void Logger_warn(const char *fmt, ...);
+void Logger_error(const char *fmt, ...);
+void Logger_debug(const char *fmt, ...);
 
-void Logger_infoExcept(const char* fmt, ...);
-void Logger_warnExcept(const char* fmt, ...);
-void Logger_errorExcept(const char* fmt, ...);
-void Logger_debugExcept(const char* fmt, ...);
+void Logger_infoExcept(const char *fmt, ...);
+void Logger_warnExcept(const char *fmt, ...);
+void Logger_errorExcept(const char *fmt, ...);
+void Logger_debugExcept(const char *fmt, ...);
 
 #endif
 

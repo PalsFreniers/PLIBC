@@ -1,3 +1,5 @@
+#define PLIBC_LOGGER_STRUCT
+#define PLIBC_LOGGER_FUNC
 #include "base.h"
 
 void Logger_info(const char* fmt, ...) {
@@ -72,5 +74,9 @@ void Logger_debugExcept(const char* fmt, ...) {
         throw(logInfoException);
 }
 
-struct logger Logger_createDefault();
+struct logger Logger_createDefault() {
+        struct logger ret = {0};
+        
+        return ret;
+}
 struct logger Logger_createExcept();
