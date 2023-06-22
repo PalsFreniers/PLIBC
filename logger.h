@@ -31,4 +31,7 @@
  * Logger_debugExcept(fmt, ...);
  */
 
+#include "logger/macros.h"
+#include "logger/base.h"
+
 #endif
