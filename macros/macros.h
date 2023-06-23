@@ -11,4 +11,9 @@
 #define MEGABYTE(x) (KILOBYTE(x) * 1024)
 #define GIGABYTE(x) (MEGABYTE(x) * 1024)
 
+#define HELLO_WORLD int main() {\
+                        printf("Hello World\n");\
+                        return 0;\
+                    }
+
 #endif
