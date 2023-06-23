@@ -4,6 +4,9 @@
 /*
  * Exception
  * with this lib you can use try-catch in C
+ * to use try catch you need to use the macro:
+ * PLIBC_INIT_EXCEPTIONS
+ * use it right after the include for exception
  * use the try-catch block like this:
  * try {
  *   Statements;
@@ -30,9 +33,6 @@
  * do not use throw or a function that could throw an exception outside
  * of a try catch structure or it could lead to undifined behaviour
  */
-
-// stdlib includes
-#include <setjmp.h>
 
 // plbic includes
 #include "exception/base.h"
