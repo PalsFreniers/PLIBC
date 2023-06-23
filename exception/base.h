@@ -3,6 +3,6 @@
 
 #include <setjmp.h>
 
-jmp_buf g_bufState;
+extern jmp_buf g_bufState;
 
 #endif
