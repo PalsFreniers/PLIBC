@@ -6,8 +6,6 @@
 // initialisation
 #define PLIBC_INIT_EXCEPTIONS jmp_buf g_bufState
 
-// generic exceptions
-#define exception (1)
 // pointer exceptions
 #define nullptrException (200)
 
