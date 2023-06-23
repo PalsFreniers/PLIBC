@@ -3,6 +3,9 @@
 
 #include "base.h"
 
+// initialisation
+#define PLIBC_INIT_EXCEPTIONS jmp_buf g_bufState
+
 // generic exceptions
 #define exception (1)
 // pointer exceptions
