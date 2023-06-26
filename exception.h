@@ -29,6 +29,8 @@
  * 
  * do not use throw or a function that could throw an exception outside
  * of a try catch structure or it could lead to undifined behaviour
+ * do not use nested try-catch block, it could lead to undefined
+ * behaviour.
  */
 
 // plbic includes
@@ -37,7 +39,7 @@
 
 // plibc exception stdlib
 #ifdef PLIBC_EXCEPTION_STDLIB
-#include "exception/stdlib.h"
+#include "exception/stdlibexcept.h"
 #endif
 
 #endif
