@@ -4,9 +4,6 @@
 /*
  * Exception
  * with this lib you can use try-catch in C
- * to use try catch you need to use the macro:
- * PLIBC_INIT_EXCEPTIONS
- * use it as a global initialisation
  * use the try-catch block like this:
  * try {
  *   Statements;

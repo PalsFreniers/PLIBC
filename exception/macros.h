@@ -3,9 +3,6 @@
 
 #include "base.h"
 
-// initialisation
-#define PLIBC_INIT_EXCEPTIONS jmp_buf g_bufState
-
 // pointer exceptions
 #define nullptrException (200)
 
