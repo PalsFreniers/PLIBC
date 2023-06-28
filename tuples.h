@@ -17,6 +17,9 @@
  * Tuple_get<type>(*tuple, value, index); // replace <type> by the type that you wan't to use
  * 
  * see types.h to get the type names
+ * 
+ * don't forget to destroy you tuple before exiting the program to prevent memory leaks:
+ * Tuple_destroy(*tuple);
  */
 
 #endif
