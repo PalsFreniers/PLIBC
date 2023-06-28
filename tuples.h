@@ -1,5 +1,5 @@
-#ifndef PLIBC_TUPLE_H
-#define PLIBC_TUPLE_H
+#ifndef PLIBC_TUPLES_H
+#define PLIBC_TUPLES_H
 
 /*
  * Tuples
@@ -21,5 +21,7 @@
  * don't forget to destroy you tuple before exiting the program to prevent memory leaks:
  * Tuple_destroy(*tuple);
  */
+
+#include "tuples/base.h"
 
 #endif
