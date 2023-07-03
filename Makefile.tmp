@@ -1,0 +1,10 @@
+CC=gcc
+CFLAGS=
+CLIB=
+
+.PHONY: all clean
+
+all: plibc plibc-debug
+
+plibc:
+        $(CC) 
