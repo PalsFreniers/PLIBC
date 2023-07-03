@@ -1,17 +1,27 @@
-#ifndef PLIBC_TUPLES_BASE_H
-#define PLIBC_TUPLES_BASE_H
+#include "base.h"
 
-#include <stdlib.h>
-#include <string.h>
-#include "../types.h"
+struct tuple *Tuple_create() {
+    struct tuple *ret = (struct tuple *)malloc(sizeof(struct tuple));
+    if(ret == NULL) return NULL;
+    ret->size = 1;
+    ret->arr = malloc(ret->size);
+    if(ret->arr == NULL) {
+        free(ret);
+        return NULL;
+    }
+    return ret;
+}
 
-struct tuple {
-    void* arr;
-    size_t size;
-};
+bool Tuple_resize(struct tuple *tuple, size_t newSize) {
+    void *tmp = malloc(newSize * sizeof(void *));
+    if(tmp == NULL) return false;
+    char *t = memcpy(tmp, tuple->arr, );
+    if(t == NULL);
+    free(tuple->arr);
+    tuple->arr = tmp;
+    return true;
+}
 
-struct tuple *Tuple_create();
-bool Tuple_resize(struct tuple *tuple, size_t newSize);
 void Tuple_destroy(struct tuple *tuple);
 
 // setters
@@ -46,5 +56,3 @@ void Tuple_getF64(struct tuple *tuple, f64 data, size_t index);
 
 void Tuple_getBool(struct tuple *tuple, bool data, size_t index);
 void Tuple_getStr(struct tuple *tuple, str data, size_t index);
-
-#endif
