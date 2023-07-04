@@ -3,7 +3,7 @@ LD=gcc
 CFLAGS=-fPIC
 LDFLAGS=-shared
 LIBS=
-CSRC=$(wildcard ../*/*.c)
+CSRC=$(wildcard */*.c)
 COBJ=$(CSRC:.c=.o)
 
 all: libs test clean
@@ -20,6 +20,6 @@ clean:
 
 test:
 	mkdir -p build/test
-	gcc -c ../test/protec/main.c -o build/test/main.o  -I../ -g -ggdb
-	gcc -o build/test/main build/test/*.o -L. -lstd
+	gcc -c test/protec/main.c -o build/test/main.o  -I. -g -ggdb
+	gcc -o build/test/main build/test/*.o -Lbuild -lstd
 	rm -rf build/test/*.o
