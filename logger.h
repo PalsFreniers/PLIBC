@@ -8,7 +8,7 @@
  * to use the logger with structure you need to define the macro :
  * #define PLIBC_LOGGER_STRUCT
  * use the logger struct like this:
- * struct logger log* = Logger_createDefault();
+ * struct logger log  = Logger_createDefault();
  * log->info(fmt, ...);
  * log->warn(fmt, ...);
  * log->error(fmt, ...);
