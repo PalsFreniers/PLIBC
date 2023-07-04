@@ -20,6 +20,7 @@ bool Tuple_resize(struct tuple *tuple, size_t newSize) {
     if(t == NULL) return false;
     free(tuple->arr);
     tuple->arr = tmp;
+    tuple->size = newSize;
     return true;
 }
 
