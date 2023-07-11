@@ -9,7 +9,7 @@ struct color {
     u8 r, g, b, a;
 };
 
-void Wallgraph_clearWall(uColor *canvas, uColor col, size_t width, size_t height);
+void Wallgraph_fillWall(uColor *wall, uColor col, size_t width, size_t height);
 
 uColor Wallgraph_c2u(struct color color);
 struct color Wallgraph_u2c(uColor color);

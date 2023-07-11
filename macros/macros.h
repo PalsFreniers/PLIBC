@@ -14,6 +14,8 @@
 #define MAX(x, y) (x < y ? y : x) 
 #define MIN(x, y) (x > y ? y : x) 
 
+#define DEFER(x) {defer = x; goto defer;}
+
 #define HELLO_WORLD int main() {\
                         printf("Hello World\n");\
                         return 0;\
