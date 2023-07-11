@@ -2,7 +2,11 @@
 #define PLIBC_WALLGRAPH_H
 
 /*
- * Wallgraph
+ * Wallgraph lib
  */
+
+#include "wallgraph/macros.h"
+#include "wallgraph/typedefs.h"
+#include "wallgraph/base.h"
 
 #endif
