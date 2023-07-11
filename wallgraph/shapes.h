@@ -6,9 +6,10 @@
 #include "typedefs.h"
 
 struct rect {
-    size_t x, y, w, h;
+    i32 x, y;
+    size_t w, h;
     uColor col;
-}
+};
 
 void Wallgraph_fillRect(uColor *wall, size_t width, size_t height, struct rect rect);
 

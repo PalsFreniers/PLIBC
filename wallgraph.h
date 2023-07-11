@@ -8,6 +8,7 @@
 #include "wallgraph/macros.h"
 #include "wallgraph/typedefs.h"
 #include "wallgraph/base.h"
+#include "wallgraph/shapes.h"
 #include "wallgraph/images.h"
 
 #endif
