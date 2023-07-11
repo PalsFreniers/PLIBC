@@ -2,10 +2,8 @@
 #include "typedefs.h"
 
 void Wallgraph_fillWall(uColor *canvas, uColor col, size_t width, size_t height) {
-    for (size_t y = 0; y < height; y++) {
-        for(size_t x = 0; x < width; x++) {
-            canvas[x+width*y] = col;
-        }
+    for (size_t i = 0; i < height * width; i++) {
+        canvas[i] = col;
     }
 }
 
