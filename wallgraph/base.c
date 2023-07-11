@@ -1,8 +1,12 @@
 #include "base.h"
 #include "typedefs.h"
 
-void Wallgraph_clearWall(uColor *canvas, uColor col, size_t x, size_t y) {
-    ;
+void Wallgraph_fillWall(uColor *canvas, uColor col, size_t width, size_t height) {
+    for (size_t y = 0; y < height; y++) {
+        for(size_t x = 0; x < width; x++) {
+            canvas[x+width*y] = col;
+        }
+    }
 }
 
 uColor Wallgraph_c2u(struct color color) {
