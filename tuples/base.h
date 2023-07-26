@@ -31,6 +31,8 @@ void Tuple_setF64(struct tuple *tuple, f64 data, size_t index);
 
 void Tuple_setBool(struct tuple *tuple, bool data, size_t index);
 void Tuple_setStr(struct tuple *tuple, str data, size_t index);
+
+void Tuple_setPtr(struct tuple *tuple, genPtr data, size_t index);
 // getters
 i8 Tuple_getI8(struct tuple *tuple, size_t index);
 i16 Tuple_getI16(struct tuple *tuple, size_t index);
@@ -47,5 +49,7 @@ f64 Tuple_getF64(struct tuple *tuple, size_t index);
 
 bool Tuple_getBool(struct tuple *tuple, size_t index);
 str Tuple_getStr(struct tuple *tuple, size_t index);
+
+genPtr Tuple_getPtr(struct tuple *tuple, size_t index);
 
 #endif

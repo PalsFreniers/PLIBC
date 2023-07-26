@@ -93,6 +93,11 @@ void Tuple_setStr(struct tuple *tuple, str data, size_t index) {
     tuple->arr[index] = (u64)data; 
 }
 
+void Tuple_setPtr(struct tuple *tuple, genPtr data, size_t index) {
+    if(tuple->size < index) Tuple_resize(tuple, index + 1);
+    tuple->arr[index] = (u64)data;
+}
+
 // getters 
 i8 Tuple_getI8(struct tuple *tuple, size_t index) {
     return (i8)tuple->arr[index];
@@ -145,3 +150,5 @@ str Tuple_getStr(struct tuple *tuple, size_t index) {
     return (str)tuple->arr[index]; 
 } 
   
+genPtr Tuple_getPtr(struct tuple *tuple, size_t index) {
+    return (genPtr)tuple->arr[index];

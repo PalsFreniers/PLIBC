@@ -18,4 +18,6 @@ typedef int bool;
 
 typedef char* str;
 
+typedef void* genPtr;
+
 #endif
