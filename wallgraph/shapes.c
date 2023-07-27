@@ -12,4 +12,6 @@ void Wallgraph_fillRect(uColor *wall, size_t width, size_t height, struct rect r
     }
 }
 
-void Wallgraph_fillCircle(uColor *wall, size_t width, size_t height, struct circle circle);
+void Wallgraph_fillCircle(uColor *wall, size_t width, size_t height, struct circle circle) {
+    ;
+}
