@@ -27,7 +27,7 @@ bool WallGraph_generateChecker() {
     uColor pixels[800*800] = Wallgraph_NULL();
     for(int y = 0; y < 8; y++) {
         for(int x = 0; x < 8; x++) {
-            struct rect r = {
+            struct rect r = (struct rect) {
                 .x   = x*100,
                 .y   = y*100,
                 .w   =   100,
