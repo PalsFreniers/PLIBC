@@ -1,10 +1,10 @@
 #ifndef PLIBC_TUPLES_BASE_H
 #define PLIBC_TUPLES_BASE_H
 
-#include <stdlib.h>
-#include <string.h>
-#include "../types.h"
-#include "../macros.h"
+#include <memory.h>
+#include <cstr.h>
+#include <types.h>
+#include <macros.h>
 
 struct tuple {
     u64* arr;

@@ -3,7 +3,7 @@ LD=gcc
 ASM=nasm
 CFLAGS=-fPIC
 ASMFLAGS=-felf64
-LDFLAGS=-shared
+LDFLAGS=-shared -nostdlib
 LIBS=
 CSRC=$(wildcard */*.c)
 COBJ=$(CSRC:.c=c.o)
@@ -17,7 +17,7 @@ libs: $(COBJ)
 	$(LD) $(LDFLAGS) -o build/libstd.so $(COBJ) $(ASMOBJ) $(LIBS)
 
 %c.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@ -g -ggdb
+	$(CC) $(CFLAGS) -c $< -o $@ -g -ggdb -nostdinc -I.
 
 %asm.o: %.asm
 	$(ASM) $(ASMFLAGS) -o $@ $<

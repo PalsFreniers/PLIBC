@@ -1,12 +1,12 @@
 #ifndef PLIBC_LOGGER_BASE_H
 #define PLIBC_LOGGER_BASE_H
 
-#include <stdio.h>
-#include <stdarg.h>
+#include <io.h>
+#include <args.h>
 #include <time.h>
 
-#include "../types.h"
-#include "../exception.h"
+#include <types.h>
+#include <exception.h>
 #include "macros.h"
 
 #ifdef  PLIBC_LOGGER_STRUCT

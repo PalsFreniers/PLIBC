@@ -1,9 +1,9 @@
 #ifndef PLIBC_CSTR_BASE_H
 #define PLIBC_CSTR_BASE_H
 
-#include <stdio.h>
-#include "../types.h"
-#include "../macros.h"
+#include <io.h>
+#include <types.h>
+#include <macros.h>
 
 size_t strlen(const str s);
 i8     strcmp(const str s1, const str s2);
