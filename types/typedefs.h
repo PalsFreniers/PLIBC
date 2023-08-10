@@ -18,4 +18,7 @@ typedef int bool;
 
 typedef char* str;
 
+#if 0
+typedef u64 size_t;
+#endif
 #endif
