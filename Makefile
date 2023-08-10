@@ -1,22 +1,29 @@
 CC=gcc
 LD=gcc
+ASM=nasm
 CFLAGS=-fPIC
+ASMFLAGS=-felf64
 LDFLAGS=-shared
 LIBS=
 CSRC=$(wildcard */*.c)
-COBJ=$(CSRC:.c=.o)
+COBJ=$(CSRC:.c=c.o)
+ASMSRC=$(wildcard */*.asm)
+ASMOBJ=$(ASMSRC:.asm=asm.o)
 
 all: libs test clean
 
 libs: $(COBJ)
 	mkdir -p build
-	$(LD) $(LDFLAGS) -o build/libstd.so $(COBJ) $(LIBS)
+	$(LD) $(LDFLAGS) -o build/libstd.so $(COBJ) $(ASMOBJ) $(LIBS)
 
-%.o: %.c
+%c.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@ -g -ggdb
 
+%asm.o: %.asm
+	$(ASM) $(ASMFLAGS) -o $@ $<
+
 clean:
-	rm -rf $(COBJ)
+	rm -rf $(COBJ) $(ASMOBJ)
 
 test:
 	mkdir -p build/test
