@@ -1,9 +1,8 @@
 #ifndef PLIBC_WALLGRAPH_BASE_H
 #define PLIBC_WALLGRAPH_BASE_H
 
-#include <stdlib.h>
 #include "typedefs.h"
-#include "../types.h"
+#include <types.h>
 
 struct color {
     u8 r, g, b, a;

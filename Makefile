@@ -1,7 +1,7 @@
 CC=gcc
 LD=gcc
 ASM=nasm
-CFLAGS=-fPIC
+CFLAGS=-fPIC -g -ggdb -nostdinc -I./includes
 ASMFLAGS=-felf64
 LDFLAGS=-shared -nostdlib
 LIBS=
@@ -17,7 +17,7 @@ libs: $(COBJ)
 	$(LD) $(LDFLAGS) -o build/libstd.so $(COBJ) $(ASMOBJ) $(LIBS)
 
 %c.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@ -g -ggdb -nostdinc -I.
+	$(CC) $(CFLAGS) -c $< -o $@
 
 %asm.o: %.asm
 	$(ASM) $(ASMFLAGS) -o $@ $<
@@ -27,6 +27,6 @@ clean:
 
 test:
 	mkdir -p build/test
-	gcc -c test/protec/main.c -o build/test/main.o  -I. -g -ggdb
+	gcc -c test/protec/main.c -o build/test/main.o  -I./includes -g -ggdb
 	gcc -o build/test/main build/test/*.o -Lbuild -lstd
 	rm -rf build/test/*.o

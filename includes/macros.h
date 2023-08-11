@@ -13,8 +13,6 @@
  *         - GIGABYTE(x); convert x gigabyte to bytes
  */
 
-#include <stdlib.h>
-
 #include "macros/macros.h"
 
 #endif

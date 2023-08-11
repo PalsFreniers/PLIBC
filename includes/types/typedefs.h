@@ -16,7 +16,7 @@ typedef double f64;
 
 typedef int bool;
 
-typedef char* str;
+typedef unsigned char* str;
 
 typedef u64 size_t;
 #endif

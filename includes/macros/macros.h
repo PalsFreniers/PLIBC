@@ -16,9 +16,10 @@
 
 #define DEFER(x) {defer = x; goto defer;}
 
-#ifndef NULL
-# define NULL ((void *)0)
-#endif
+#define NULL ((void *)0)
+
+#define EXIT_SUCCESS 0
+#define EXIT_FAILURE 1
 
 #define HELLO_WORLD int main() {\
                         printf("Hello World\n");\

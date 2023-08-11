@@ -1,4 +1,4 @@
-#include "base.h"
+#include <wallgraph/base.h>
 
 void Wallgraph_fillWall(uColor *wall, uColor col, size_t width, size_t height) {
     for (size_t i = 0; i < height * width; i++) wall[i] = col;

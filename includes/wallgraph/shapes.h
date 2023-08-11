@@ -1,8 +1,8 @@
 #ifndef PLIBC_WALLGRAPH_SHAPES_H
 #define PLIBC_WALLGRAPH_SHAPES_H
 
-#include <stdlib.h>
-#include "../types.h"
+#include <memory.h>
+#include <types.h>
 #include "typedefs.h"
 
 struct rect {

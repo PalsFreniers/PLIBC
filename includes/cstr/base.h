@@ -1,7 +1,6 @@
 #ifndef PLIBC_CSTR_BASE_H
 #define PLIBC_CSTR_BASE_H
 
-#include <io.h>
 #include <types.h>
 #include <macros.h>
 

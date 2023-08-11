@@ -1,10 +1,10 @@
 #ifndef PLIBC_WALLGRAPH_IMAGES_H
 #define PLIBC_WALLGRAPH_IMAGES_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "../macros.h"
-#include "../types.h"
+#include <io.h>
+#include <memory.h>
+#include <macros.h>
+#include <types.h>
 #include "base.h"
 #include "typedefs.h"
 

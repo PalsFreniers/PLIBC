@@ -1,7 +1,5 @@
 #ifndef PLIBC_SYSTEM_STRUCTS_H
 #define PLIBC_SYSTEM_STRUCTS_H
 
-struct stat {
-
 
 #endif // PLIBC_SYSTEM_STRUCTS_H
