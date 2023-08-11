@@ -15,7 +15,13 @@ i8, i16, i32, i64 // signed int
 u8, u16, u32, u64 // unsigned int
 f32, f64 // floats
 bool // boolean
+genPtr // generic pointer (void)
 str // char * (cstring)
+```
+
+to create a variable vith the `genPtr` type, add a star after it :
+```c
+genPtr* ptr;
 ```
 
 the type header also comes with two macros :
