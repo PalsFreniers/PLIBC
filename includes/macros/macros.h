@@ -3,7 +3,7 @@
 
 #define UNUSED(x) ((void)x)
 #define TODO(str) {\
-                  fprintf("[TODO] %s -> %s", __FILE__, str);\
+                  fprintf(stderr, "[TODO] %s -> %s", __FILE__, str);\
                   exit(1);\
                   }
 #define BIT(x) (1 << x)
@@ -13,6 +13,13 @@
 
 #define MAX(x, y) (x < y ? y : x) 
 #define MIN(x, y) (x > y ? y : x) 
+
+#define DEFER(x) {defer = x; goto defer;}
+
+#define NULL ((void *)0)
+
+#define EXIT_SUCCESS 0
+#define EXIT_FAILURE 1
 
 #define HELLO_WORLD int main() {\
                         printf("Hello World\n");\

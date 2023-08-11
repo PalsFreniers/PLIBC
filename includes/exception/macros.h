@@ -1,8 +1,6 @@
 #ifndef PLIBC_EXCEPTION_MACRO_H
 #define PLIBC_EXCEPTION_MACRO_H
 
-#include "base.h"
-
 // pointer exceptions
 #define nullptrException (200)
 
