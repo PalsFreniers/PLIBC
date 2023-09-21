@@ -1,4 +1,4 @@
-#include "images.h"
+#include <wallgraph/images.h>
 
 int Wallgraph_saveToPPM(uColor *wall, size_t width, size_t height, const str path) {
     int defer = 0;

@@ -1,4 +1,4 @@
-#include <cstr.h>
+#include <cstr/base.h>
 
 size_t strlen(const str s) {
         size_t ret = 0;

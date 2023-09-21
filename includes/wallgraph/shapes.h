@@ -5,12 +5,8 @@
 #include <types.h>
 #include "typedefs.h"
 
-struct rect {
-    i32 x, y;
-    size_t w, h;
-    uColor col;
-};
-
 void Wallgraph_fillRect(uColor *wall, size_t width, size_t height, struct rect rect);
+void Wallgraph_fillCircle(uColor *wall, size_t width, size_t height, struct circle circle);
+void WallGraph_drawLine(uColor *wall, size_t width, size_t height, struct line line);
 
 #endif
