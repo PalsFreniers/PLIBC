@@ -3,6 +3,7 @@
 
 #include <memory.h>
 #include <types.h>
+#include "struct.h"
 #include "typedefs.h"
 
 void Wallgraph_fillRect(uColor *wall, size_t width, size_t height, struct rect rect);

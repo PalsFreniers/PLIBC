@@ -6,7 +6,7 @@
 #include <macros.h>
 #include <types.h>
 #include "struct.h"
-#include "typedefs.h"
+#include <wallgraph/typedefs.h>
 
 int Wallgraph_saveToPPM(uColor *wall, size_t width, size_t height, const str path);
 

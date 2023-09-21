@@ -1,6 +1,6 @@
-#include "shapes.h"
+#include <wallgraph/shapes.h>
 #define PLIBC_LOGGER_STRUCT
-#include "../logger.h"
+#include <logger.h>
 
 void Wallgraph_fillRect(uColor *wall, size_t width, size_t height, struct rect rect) {
     for(int dy = 0; dy < rect.h; dy++) {

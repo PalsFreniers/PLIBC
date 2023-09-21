@@ -80,9 +80,3 @@ bool inSet(char c, const str set) {
     iwhile(i, set[i] != 0) if(set[i] == c) return true;
     return false;
 }
-
-size_t strspn(const str s, const str sub) {
-        
-}
-
-size_t strcspn(const str s, const str sub);
