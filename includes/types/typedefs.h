@@ -14,11 +14,14 @@ typedef unsigned long long int u64;
 typedef float  f32;
 typedef double f64;
 
-typedef int bool;
+typedef u8 bool;
 
-typedef unsigned char* str;
+typedef char* str;
 
 typedef void genPtr;
 
 typedef u64 size_t;
-#endif
+
+#endif // PLIBC_TYPES_TYPEDEFS_H
+
+

@@ -21,6 +21,11 @@
 #define EXIT_SUCCESS 0
 #define EXIT_FAILURE 1
 
+#define irepeat(inc, count) for(size_t inc = 0; inc < count; inc++)
+#define iwhile(inc, cond) for(size_t inc = 0; cond; inc++)
+#define drepeat(dec, count) for(size_t dec = count - 1; dec >= 0; dec--)
+#define dwhile(dec, value, cond) for(size_t dec = value - 1; cond; dec--)
+
 #define HELLO_WORLD int main() {\
                         printf("Hello World\n");\
                         return 0;\
